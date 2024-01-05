@@ -1,0 +1,10 @@
+.main-wrapper {
+  position: relative;
+  height: calc(100% - 8rem);
+
+  .main-content {
+    left: 31.2rem;
+    position: absolute;
+    top: 1.6rem;
+  }
+}

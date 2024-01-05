@@ -1,0 +1,34 @@
+.folder {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  border-radius: 6px;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  transition: 200ms ease;
+  width: 100%;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+
+  &.open {
+    
+    .ph-caret-right {
+      transform: rotateZ(90deg);
+    }
+  }
+
+  .ph-caret-right {
+    transition: 200ms ease;
+  }
+
+  .folder__name {
+
+  }
+}
+
+.folder__inner-folder {
+  margin-left: 4.8rem;
+  width: 100%;
+}

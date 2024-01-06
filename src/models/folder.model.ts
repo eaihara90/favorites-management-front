@@ -4,6 +4,7 @@ export class FolderModel {
   files?: FileModel[];
   folders?: FolderModel[];
   folderId!: string;
-  name!: string;
+  title!: string;
+  parentId?: string;
   path!: string;
 }

@@ -2,29 +2,34 @@ import { BrowserRouter } from 'react-router-dom';
 
 import './App.scss';
 import { FolderNavigation } from 'src/ui/compound/folder-navigation/folder-navigation';
-import { FolderModel } from './models/folder.model';
+import { FolderModel } from 'src/models/folder.model';
 import { MainRoutes } from './MainRoutes';
+import { useEffect, useState } from 'react';
 
-const folders: FolderModel[] = [
-  { folderId: '1', name: '1 folder', path: '',},
-  { folderId: '2', name: '2 folder', path: '', folders: [
-    { folderId: '3', name: 'sub-folder 1 folder', path: ''},
-    { folderId: '4', name: 'sub-folder 2 folder', path: '', folders: [
-      { folderId: '5', name: 'sub-folder 1 folder sub-folder 1 folder', path: ''},
-      { folderId: '6', name: 'sub-folder 2 folder', path: ''},
-    ]},
-  ]},
-  { name: '3 folder', path: '', folderId: '7'},
-];
 
 function App() {
+  const [rootFolders, setRootFolders] = useState<FolderModel[]>([]);
+
+  useEffect(() => {
+    loadFolders();
+  }, []);
+
+  const loadFolders = async (): Promise<void> => {
+    try {
+      const response = await fetch('http://localhost:3000/folders');
+      const data = await response.json();
+      setRootFolders(data);
+    } catch (err) {
+      console.log(err);
+    }
+  }
 
   return (
     <BrowserRouter>
-      <h1>Favorites Management Front</h1>
+      <h1>Management Front</h1>
       
       <div className="main-wrapper">
-        <FolderNavigation root folders={folders}/>
+        <FolderNavigation root folders={rootFolders}/>
         
         <main className="main-content">
           <MainRoutes />

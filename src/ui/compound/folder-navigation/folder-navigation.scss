@@ -3,13 +3,11 @@
   width: 100%;
 
   &.root {
-    border: 1px solid white;
+    border: 1px solid var(--c-grey-300);
     border-radius: 6px;
     min-height: 80vh;
     overflow: auto;
     padding: 0.8rem;
-    position: absolute;
-    top: 1.6rem;
     min-width: 20rem;
     width: 28rem;
   }

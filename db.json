@@ -1,0 +1,39 @@
+{
+  "folders": [
+    {
+      "id": "1a",
+      "title": "Folder 1",
+      "folderId": "1a",
+      "files": [
+      {
+        "title": "Link 1",
+        "description": "Description link 1",
+        "url": "http://www.google.com"
+      },
+      {
+        "title": "Link 2",
+        "description": "Description link 2",
+        "url": "http://www.google.com"
+      }]
+    },
+    {
+      "id": "1b",
+      "title": "Folder with subfolder",
+      "folderId": "1b",
+      "folders": [
+      {
+        "parentId": "1b",
+        "title": "sub folder 1",
+        "folderId": "1b2a" ,
+        "id": "1b2a" 
+      },
+      {
+        
+        "parentId": "1b",
+        "title": "sub folder 2",
+        "folderId": "1b2b",
+        "id": "1b2b" 
+      }]
+    }
+  ]
+}

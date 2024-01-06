@@ -1,5 +1,6 @@
 export class FileModel {
   description?: string;
-  name!: string;
+  imgSrc?: string;
+  title!: string;
   url!: string;
 }

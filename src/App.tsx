@@ -16,9 +16,9 @@ function App() {
 
   const loadFolders = async (): Promise<void> => {
     try {
-      const response = await fetch('http://localhost:3000/folders');
+      const response = await fetch('http://localhost:3005/api/folders');
       const data = await response.json();
-      setRootFolders(data);
+      setRootFolders(data.folders);
     } catch (err) {
       console.log(err);
     }

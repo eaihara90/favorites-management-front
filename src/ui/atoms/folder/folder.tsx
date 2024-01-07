@@ -17,13 +17,13 @@ export function Folder({ folder }: FolderProps): JSX.Element {
     if (folder?.folders?.length) {
       setIsOpen(_prev => !_prev);
     }
-    history.push(`/folder/${folder.folderId}`);
+    history.push(`/folder/${folder._id}`);
   }
 
   return (
     <>
       <li className={`folder ${isOpen ? 'open': ''}`} onClick={handleClickOnFolder}>
-        { folder?.folders?.length && <i className={`ph ph-caret-right`}></i>}
+        { (folder?.folders?.length > 0) && <i className={`ph ph-caret-right`}></i>}
         <i className="ph ph-folder-simple"></i>
         <span className="folder__title">{folder?.title}</span>
       </li>

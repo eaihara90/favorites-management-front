@@ -1,0 +1,21 @@
+.new-folder-wrapper {
+  background-color: rgb(var(--c-white));
+  border-radius: 6px;
+  height: 80vh;
+  width: 70vw;
+
+  .form {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+
+    .form-btns {
+      align-items: center;
+      display: flex;
+      gap: 1.2rem;
+      justify-content: flex-end;
+      margin-top: auto;
+      padding: 1.2rem;
+    }  
+  }
+}

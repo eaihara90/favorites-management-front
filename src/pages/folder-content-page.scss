@@ -1,20 +1,26 @@
-.folder-content {
-  &__header {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+.folder-page-wrapper {
+  gap: 3.2rem;
+  display: flex;
 
-    &-controls {
+  .folder-content {
+    flex: 1 0 auto;
+    &__header {
       align-items: center;
       display: flex;
-      gap: 1.2rem;
       justify-content: space-between;
+  
+      &-controls {
+        align-items: center;
+        display: flex;
+        gap: 1.2rem;
+        justify-content: space-between;
+      }
     }
-  }
-
-  &__files {
-    display: flex;
-    gap: 1.2rem;
-    flex-wrap: wrap;
+  
+    &__files {
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
   }
 }

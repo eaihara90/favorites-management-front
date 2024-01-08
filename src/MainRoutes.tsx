@@ -4,7 +4,7 @@ import { FolderContentPage } from "./pages/folder-content-page";
 export function MainRoutes(): JSX.Element {
   return (
     <Switch>
-      <Route path={'/folder/:folderId'} component={FolderContentPage} />
+      <Route path={'/folder'} component={FolderContentPage} />
     </Switch>
   );
 }

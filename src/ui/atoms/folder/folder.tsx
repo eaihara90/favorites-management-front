@@ -23,10 +23,11 @@ export function Folder({ folder }: FolderProps): JSX.Element {
   return (
     <>
       <li className={`folder ${isOpen ? 'open': ''}`} onClick={handleClickOnFolder}>
-        { (folder?.folders?.length > 0) && <i className={`ph ph-caret-right`}></i>}
+        { (folder?.folders?.length > 0) && <i className={`ph ph-caret-right`}></i> }
         <i className="ph ph-folder-simple"></i>
         <span className="folder__title">{folder?.title}</span>
       </li>
+
       { (isOpen && folder?.folders?.length) &&
         <div className="inner-folder">
           <FolderNavigation folders={folder.folders}/>

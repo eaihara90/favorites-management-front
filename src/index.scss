@@ -16,6 +16,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  --c-white: 255, 255, 255;
   --c-grey-100: #d3d3d3;
   --c-grey-200: #c3c3c3;
   --c-grey-300: #b3b3b3;
@@ -25,8 +26,20 @@
   --c-grey-700: #737373;
   --c-grey-800: #636363;
   --c-type: #555;
+  --c-black: 0, 0, 0;
   // --c-type: #e3e3e3;
 
+  --c-primary-lighten: 75, 166, 255;
+  --c-primary-light: 53, 155, 255;
+  --c-primary: 30, 144, 255;
+  --c-primary-dark: 27, 130, 230;
+  --c-primary-darken: 24, 115, 204;
+  
+  --c-danger-lighten: 255, 106, 51;
+  --c-danger-light: 255, 88, 26;
+  --c-danger: 255, 69, 0;
+  --c-danger-dark: 230, 62, 0;
+  --c-danger-darken: 204, 55, 0;
 }
 
 * {

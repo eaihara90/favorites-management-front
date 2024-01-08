@@ -13,7 +13,7 @@
   width: 2.4rem;
 
   &:hover {
-    background-color: rgba(dodgerblue, 0.1);
-    color: dodgerblue;
+    background-color: rgba(var(--c-primary), 0.1);
+    color: rgb(var(--c-primary));
   }
 }

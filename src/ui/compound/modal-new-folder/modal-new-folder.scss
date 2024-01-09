@@ -2,20 +2,28 @@
   background-color: rgb(var(--c-white));
   border-radius: 6px;
   height: 80vh;
-  width: 70vw;
+  padding: 1.6rem;
+  
 
   .form {
+    align-items: center;
     display: flex;
     flex-flow: column;
     height: 100%;
 
-    .form-btns {
+    &-controls {
+      display: flex;
+      flex-flow: column;
+    }
+
+    &-btns {
       align-items: center;
       display: flex;
       gap: 1.2rem;
-      justify-content: flex-end;
+      justify-content: space-between;
       margin-top: auto;
       padding: 1.2rem;
+      width: 100%;
     }  
   }
 }
